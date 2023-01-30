@@ -1,0 +1,51 @@
+.wrapper {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 48px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.filter-by-price {
+    padding: 16px;
+    align-items: flex-start;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.title {
+    margin-bottom: 16px;
+
+    span {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: 500;
+        color: #2c2c2c;
+    }
+}
+
+.filter-item {
+    .text {
+        font-family: Lexend;
+        cursor: pointer;
+        user-select: none;
+        color: #2c2c2c;
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 20px;
+        &:hover {
+            color: #9c9b9b;
+        }
+    }
+    .text:last-child {
+        margin-bottom: 0;
+    }
+    .active {
+        color: var(--primary);
+    }
+}

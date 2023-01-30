@@ -1,0 +1,58 @@
+// menu wrapper
+.menu-list {
+    width: 280px;
+}
+
+.menu-popper {
+    padding-bottom: 4px;
+}
+
+.menu-body {
+    overflow-y: auto;
+}
+
+.menu-item {
+    width: 100%;
+    height: 40px;
+    padding: 10px 16px;
+    cursor: pointer;
+    &.separate {
+        border-top: solid 1px rgba(22, 24, 35, 0.12);
+    }
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+.abc {
+    display: flex;
+    align-items: center;
+}
+.menu-icon {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-right: 12px;
+}
+
+.menu-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+// Header
+
+.menu-header {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

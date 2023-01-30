@@ -1,0 +1,111 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(204, 204, 204) transparent;
+    padding: 72px 24px 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 24px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Lexend;
+}
+
+.form-add-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 40px;
+    label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(151, 150, 150);
+    }
+}
+.input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Lexend;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.male-radio {
+    margin-right: 16px;
+}
+
+.female-radio {
+    margin-right: 16px;
+}
+
+.label-radio {
+    font-size: 1.4rem !important;
+    font-family: Lexend !important;
+    font-weight: normal !important;
+    color: rgb(44, 44, 44) !important;
+    margin-left: 4px;
+}
+.date-picker {
+    position: relative;
+    width: 400px;
+}
+.calendar {
+    position: absolute;
+    bottom: calc(25%);
+    z-index: 10;
+    left: 25%;
+    border: 1px solid #ccc;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.btn-submit {
+    padding: 8px 48px;
+    font-size: 1.4rem;
+    font-family: var(--font-family);
+    font-weight: normal;
+    border-radius: 4px;
+    background-color: lightblue;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+}

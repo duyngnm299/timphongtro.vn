@@ -1,0 +1,78 @@
+.wrapper {
+    width: 160px;
+}
+
+.search-by-date {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        border-color: #000;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background-color: transparent;
+    }
+}
+
+.icon-left {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: rgb(44, 44, 44);
+    margin-right: 8px;
+}
+
+.text {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: rgb(44, 44, 44);
+    font-weight: normal;
+    user-select: none;
+}
+
+.icon-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.list-item {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px;
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+.item {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: rgb(44, 44, 44);
+    padding: 6px 12px;
+    user-select: none;
+    &:hover {
+        background-color: #f2f2f2;
+    }
+}

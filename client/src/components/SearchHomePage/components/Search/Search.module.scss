@@ -1,0 +1,131 @@
+.search,
+.search-result {
+    width: 705px;
+}
+
+.search-bar,
+.search-bar-result {
+    width: 412px;
+}
+.popper {
+    padding-bottom: 8px;
+}
+.search {
+    height: 48px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    // border: 1px solid transparent;
+    position: relative;
+    input {
+        flex: 1;
+        font-size: 1.4rem;
+        padding: 4px 165px 4px 0;
+        border: none;
+        outline: none;
+        font-family: var(--font-family);
+        background-color: transparent;
+        caret-color: var(--primary);
+    }
+}
+
+.search-title {
+    font-size: 1.3rem;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 500;
+    padding: 8px 16px 4px 16px;
+}
+
+.no-result {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    span {
+        font-size: 1.8rem;
+        margin-top: 18px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.clear,
+.loading {
+    font-size: 1.6rem;
+    position: absolute;
+    right: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(22, 24, 35, 0.34);
+    background-color: transparent;
+}
+
+.loading {
+    animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+.btn-search {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    .icon-search {
+        line-height: 2rem;
+        font-size: 2rem;
+        color: #fff;
+        padding: 2px 8px;
+        float: left;
+        margin-top: 2px;
+    }
+    .search-text {
+        font-size: 1.4rem;
+        color: #fff;
+        padding-right: 12px;
+    }
+}
+
+.search-value {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.1);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+    .value {
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 16px 8px 16px;
+        font-size: 1.4rem;
+        width: 100%;
+        line-height: 2rem;
+        margin-left: 32px;
+        .value-icon {
+            position: absolute;
+            top: 2px;
+            left: 16px;
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
+}

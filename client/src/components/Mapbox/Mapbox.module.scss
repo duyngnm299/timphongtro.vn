@@ -1,0 +1,60 @@
+.map {
+    position: relative;
+    width: 100%;
+    height: 270px;
+}
+.mapbox-details-post {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0 40px;
+    border-radius: 4px;
+}
+
+.preview-post {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0 40px;
+    border-radius: 4px;
+}
+
+.mapbox-details-post-user {
+    margin-top: 20px;
+    height: 280px;
+}
+
+.edit-post {
+    width: 100%;
+}
+.located-image {
+    width: 30px;
+    height: 30px;
+}
+
+.distance {
+    position: absolute;
+    top: 14px;
+    left: 50px;
+}
+
+.distance-text {
+    font-size: 1.3rem;
+    background-color: rgb(94, 93, 93);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.full-screen-control {
+    position: absolute;
+    top: 50px;
+}
+
+.lngLat {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+}
+.lng,
+.lat {
+    font-size: 1.4rem;
+}

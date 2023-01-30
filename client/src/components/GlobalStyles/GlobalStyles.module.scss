@@ -1,0 +1,120 @@
+@import 'normalize.css';
+:root {
+    --primary: #e03c31;
+    --black: #000;
+    --text-color: rgba(22, 24, 35, 1);
+    --white: #fff;
+    --font-family: 'Lexend Medium';
+    // Default layout
+    --default-layout-header-height: 96px;
+    --default-layout-width: 1536px;
+    --default-layout-horizontal-spacer: 24px;
+    --search-bar-height: 57px;
+    --side-bar-width: 280px;
+    --window-height: 731px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: #161823;
+    overflow-y: overlay;
+}
+
+// Scrollbar CSS
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: #161823;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+// Fonts embeded
+@font-face {
+    font-family: 'Lexend Medium';
+    src: url('/assets/fonts/Lexend-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lexend Medium';
+    src: url('/assets/fonts/Lexend-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Lexend Medium';
+    src: url('/assets/fonts/Lexend-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Lexend Medium';
+    src: url('/assets/fonts/Lexend-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('/assets/fonts/Lexend-Light.ttf');
+    font-weight: 400;
+}
+
+// Custom tippy tooltip
+body {
+    .tippy-box {
+        background-color: rgba(84, 84, 84, 0.92);
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        font-family: 'Lexend';
+        top: -4px;
+        letter-spacing: 1px;
+        // white-space: pre-line;
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+        // word-wrap: break-word;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+}

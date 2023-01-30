@@ -1,0 +1,106 @@
+.modal {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: absolute;
+    top: calc(50% - 294px);
+    left: calc(50% - 588px);
+    bottom: calc(50% - 294px);
+    right: unset;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    outline: none;
+    padding: 0px;
+    width: 1176px;
+    height: 85%;
+    max-height: 85%;
+    overflow: auto;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    padding: 16px 24px 15px;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    position: fixed;
+    z-index: 999;
+    width: 1174px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.btn-left,
+.btn-right {
+    height: 32px;
+    display: inline-block;
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    padding: 6px 12px 6px 11px;
+    color: rgb(153, 153, 153);
+    opacity: 1;
+    border-color: rgb(204, 204, 204) currentcolor rgb(204, 204, 204)
+        rgb(204, 204, 204);
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    border-image: none 100% / 1 / 0 stretch;
+    font-family: var(--font-family);
+    &:hover {
+        padding: 6px 12px 6px 11px;
+        border-color: rgb(204, 204, 204) currentcolor rgb(204, 204, 204)
+            rgb(204, 204, 204);
+        border-style: solid none solid solid;
+        border-width: 1px medium 1px 1px;
+        border-image: none 100% / 1 / 0 stretch;
+        background-color: rgb(242, 242, 242);
+        color: rgb(44, 44, 44);
+    }
+}
+
+.btn-right {
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.btn-active {
+    padding: 6px 12px 6px 11px;
+    border-color: rgb(204, 204, 204) currentcolor rgb(204, 204, 204)
+        rgb(204, 204, 204);
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    border-image: none 100% / 1 / 0 stretch;
+    background-color: rgb(242, 242, 242);
+    color: rgb(44, 44, 44);
+}
+
+.close-icon {
+    color: rgb(153, 153, 153);
+    font-size: 24px;
+    cursor: pointer;
+    &:hover {
+        color: rgb(44, 44, 44);
+    }
+}

@@ -1,0 +1,86 @@
+.saved-item {
+    position: relative;
+    display: flex;
+    padding: 8px 32px 8px 16px;
+    width: 400px;
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+    &:hover .deleted-icon {
+        display: block;
+        background-color: #e4e4e4;
+    }
+    .deleted-icon {
+        display: none;
+        position: absolute;
+        top: 34%;
+        right: 2%;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.img-container {
+    display: inline-block;
+    margin-right: 12px;
+    width: 64px;
+    max-width: 64px;
+}
+.image {
+    display: block;
+    width: 64px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.title {
+    display: -webkit-box !important;
+    height: 20px;
+    overflow: hidden !important;
+    -webkit-line-clamp: 1;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    -webkit-box-orient: vertical !important;
+    line-height: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.time {
+    display: -webkit-box !important;
+    height: 20px;
+    overflow: hidden !important;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    -webkit-box-orient: vertical !important;
+    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #505050;
+}
+
+.empty-saved {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f2f2;
+    height: 100px;
+}
+
+.empty-image {
+    width: 177px;
+    height: 174px;
+}

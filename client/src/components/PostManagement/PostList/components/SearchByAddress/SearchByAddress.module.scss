@@ -1,0 +1,96 @@
+.address-list,
+.address-body {
+    width: 210px;
+    max-width: 210px;
+}
+.address-popper {
+    padding-bottom: 8px;
+}
+.search-by-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 210px;
+    max-width: 210px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 32px;
+    max-height: 32px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        border: 1px solid #000;
+    }
+}
+.active {
+    border: 1px solid #000;
+}
+.left {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    max-width: 180px;
+}
+
+.icon-left {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: rgb(44, 44, 44);
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.text {
+    max-width: 142px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: rgb(44, 44, 44);
+    font-weight: normal;
+    user-select: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.icon-clear {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-right: 12px;
+    color: #ccc;
+}
+.right {
+    display: flex;
+    align-items: center;
+}
+.icon-right {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-right: 12px;
+}
+
+.address-items {
+    border-radius: 4px;
+    z-index: 10;
+    max-height: 140px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(204, 204, 204) transparent;
+    cursor: pointer;
+
+    .item {
+        display: block;
+        width: 100%;
+        font-family: Lexend;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 6px 12px;
+        user-select: none;
+        &:hover {
+            background-color: #f3f3f3;
+        }
+    }
+}

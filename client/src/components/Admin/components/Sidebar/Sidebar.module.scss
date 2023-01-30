@@ -1,0 +1,130 @@
+.wrapper {
+    width: var(--side-bar-width);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(182, 182, 182, 0.18) 0px 4px 8px;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    z-index: 999;
+    // overflow: hidden;
+    // max-height: calc(100vh - 80px);
+    // scrollbar-width: thin;
+    // scrollbar-color: rgb(204, 204, 204) transparent;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    margin-right: 16px;
+}
+.avatar {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 66px);
+}
+
+.username {
+    font-size: 1.4rem;
+    font-weight: 600;
+    user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.email {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #8c8c8c;
+    user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dashboard-mng {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px 0 16px;
+    line-height: 2.2rem;
+    user-select: none;
+    position: relative;
+}
+.text-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #888;
+}
+.dashboard-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 36px;
+    border-left: 2px solid transparent;
+    line-height: 2.2rem;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(242, 242, 242);
+    }
+}
+.quick-menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.quick-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px 12px 36px;
+    line-height: 2.2rem;
+    border-left: 2px solid transparent;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        background-color: rgb(242, 242, 242);
+    }
+}
+
+.icon {
+    font-size: 2.4rem;
+    width: 24px;
+    height: 24px;
+}
+.text {
+    font-size: 1.4rem;
+    margin-left: 12px;
+}
+
+.active {
+    border-left: 2px solid var(--primary);
+    color: var(--primary);
+}
